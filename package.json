@@ -1,0 +1,42 @@
+{
+    "name": "abacus",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Beautiful calculator",
+    "author": {
+        "name": "Tiny Brief",
+        "url": "https://github.com/tiny-power/tiny-brief/issues",
+        "email": "tinybrief@gmail.com"
+    },
+    "homepage": "https://github.com/tiny-power/tiny-brief#readme",
+    "scripts": {
+        "serve": "vue-cli-service electron:serve",
+        "build": "vue-cli-service electron:build"
+    },
+    "main": "background.js",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "clientjs": "^0.2.1",
+        "codemirror": "^5.65.17",
+        "core-js": "^3.24.1",
+        "electron-rebuild": "^3.2.9",
+        "element-ui": "^2.15.10",
+        "mathjs": "^13.0.3",
+        "md5": "^2.2.1",
+        "path": "^0.12.7",
+        "regenerator-runtime": "^0.13.9",
+        "vue": "^2.6.11",
+        "vue-router": "^3.2.0"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.3.0",
+        "@vue/cli-plugin-router": "^4.3.0",
+        "@vue/cli-service": "^4.3.0",
+        "babel-plugin-component": "^1.1.1",
+        "compression-webpack-plugin": "^6.0.0",
+        "electron": "22.3.3",
+        "electron-devtools-installer": "^3.1.0",
+        "vue-cli-plugin-electron-builder": "~2.1.1",
+        "vue-template-compiler": "^2.6.11"
+    }
+}
