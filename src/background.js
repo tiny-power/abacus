@@ -7,7 +7,6 @@ protocol.registerSchemesAsPrivileged([{ scheme: 'app', privileges: { secure: tru
 
 let mainWindow = null
 async function createMainWindow() {
-    // 禁止程序多开
     if (!app.requestSingleInstanceLock()) {
         app.quit()
         return
@@ -41,7 +40,6 @@ async function createMainWindow() {
     }
 }
 
-// 当运行第二个实例时，将会聚焦到win这个窗口
 app.on('second-instance', () => {
     if (mainWindow) {
         if (mainWindow.isMinimized()) mainWindow.restore()
